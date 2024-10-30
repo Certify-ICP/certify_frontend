@@ -19,7 +19,7 @@ function Footer() {
             About
           </a>
           <a href="" className="m-2 mx-4">
-            Help
+            Contact
           </a>
         </ul>
         <ul className="flex  ">

@@ -1,4 +1,4 @@
-import { useState, React } from "react";
+import { React } from "react";
 import { Link, Outlet } from "react-router-dom";
 import template from "./assets/homepagetemplate.png";
 import { CheckIcon, LockClosedIcon, GlobeIcon } from "@radix-ui/react-icons";
@@ -6,8 +6,6 @@ import Footer from "./footer";
 import Nav from "./navbar";
 
 function Home() {
-  const [count, setCount] = useState(0);
-
   const goals = [
     {
       id: 1,
@@ -91,7 +89,7 @@ function Home() {
   ));
 
   return (
-    <div className=" h-[971px] bg-[#012a4a] absolute inset-0 font-['Rubik']">
+    <div className=" h-[971px] bg-[#012a4a] absolute inset-0 font-['Lato']">
       <Nav />
       <div className=" bg-[#012a4a] relative h-[650px] flex flex-col items-center   w-screen ">
         <div className="flex flex-col items-center bg-white w-screen h-[450px]">
@@ -114,21 +112,21 @@ function Home() {
         className=" flex justify-between items-center h-[600px] bg-white mt-[170px] text-[#415a77] py-[300px] border-y-[50px] border-[#012a4a] mb-0"
       >
         {" "}
-        <div className=" flex justify-between items-center">
-          <div>
-            <h1 className=" text-[55px] font-extrabold w-[600px] text-[#0d1b2a] ml-20 ">
+        <div className=" flex justify-between items-center  w-screen">
+          <div className=" w-fit">
+            <h1 className=" text-[55px] font-extrabold w-[600px] text-[#0d1b2a] ml-16 ">
               Our goal is to help verify and secure the authenticity of
               certificates.
             </h1>
           </div>
-          <div className=" grid grid-cols-2 gap-2 grid-rows-2 ml-0">{Item}</div>{" "}
+          <div className="  grid grid-cols-2 gap-2 grid-rows-2 ml-0">{Item}</div>{" "}
         </div>
       </section>
       <section
         id="howitworks"
-        className=" border-y-[60px] border-[#012a4a]  bg-[#012a4a] h-fit p-5 flex flex-col justify-center items-center text-white mt-0"
+        className=" border-y-[60px] border-[#012a4a]  bg-[#012a4a] h-fit p-5 flex flex-col justify-center  items-center text-white mt-0"
       >
-        <h3 className="mt-[0px] mb-[20px] font-extrabold text-[50px] w-[600px] text-center text-white leading-tight">
+        <h3 className=" mt-[0px] mb-[20px] font-extrabold text-[50px] w-fit text-center text-white leading-tight">
           How it works
         </h3>
         <div className=" mb-[30px]">{Items}</div>
