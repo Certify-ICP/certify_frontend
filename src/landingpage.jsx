@@ -1,9 +1,7 @@
 import { useState, React } from "react";
 import { Link, Outlet } from "react-router-dom";
-import logo from "./assets/logo.png";
-import template from "./assets/template.png";
+import template from "./assets/homepagetemplate.png";
 import { CheckIcon, LockClosedIcon, GlobeIcon } from "@radix-ui/react-icons";
-
 import Footer from "./footer";
 import Nav from "./navbar";
 
